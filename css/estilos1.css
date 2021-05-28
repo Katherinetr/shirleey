@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Teoria del color</title>
+</head>
+<style> 
+	body {
+		background: silver;
+		font-family: Arial, Helvetica;
+	}
+
+	.contenedor{
+		width: 70%;
+		margin: 0px auto;
+		text-align: left;
+	}
+
+	header{
+		background-color: black;
+		height: 110px;
+		width: 100%;
+		font-size: 100px;
+		color: white;
+		text-align: center;
+		font-family: fantasy;
+	}
+
+	nav ul li{
+		float:left;
+		list-style: none;
+		margin: 10px;
+	}
+
+	.clearspace{
+		clear: both;
+	}
+
+	nav{
+		background: white;
+		height: 50px;
+	}
+
+	footer{
+		background:black;
+		color: green;
+		width: 70%;
+		margin: 0px auto;
+	}
+
+	img{
+		width: 20px;
+		height: 20px;
+	}
+	.evento img{
+		width: 500px;
+		height: 500px;
+		margin: 0px auto;
+	}
+	.valores img{
+		width: 100px;
+		height: 400px;
+		margin: 0px auto;
+	}
+	.contenedor-video{
+		position: relative;
+		padding-top: 56.25%;
+		overflow: hidden;
+	}
+	.contendor-video frame{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		height: 80%;
+	}
+	h2{
+		text-align: center;
+		font-size: 50px;
+	}
+	.productos img{
+		width: 200px;
+		height: 200px;
+	}
+	table-th-td{
+		border:1px;
+		border-collapse: collapse;
+	}
+	th{
+		padding: 20px;
+	}
+</style> 

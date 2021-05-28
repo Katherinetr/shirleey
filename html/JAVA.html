@@ -1,0 +1,82 @@
+<!--Garcia Trejo Katherine Shadany-->
+<!--29 de Abril de 2021-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">						
+	<title>S H I R L E E Y</title>									<!--titulo de la página-->
+	<link rel="stylesheet" href="Estilos.css" type="text/css">		<!--hoja de estilo adjunta-->
+	<link rel="stylesheet" href="estilos1.css" type="text/css">		<!--hoja de estilo adjunta-->
+	<meta name="description" content="Porque la vanidad es tu mayor pasion">	<!--Etiqueta meta que permitira mostrar una        
+																					pequeña descripcion del sitio web -->
+	<meta name="keywords" content="belleza, mujer, vanidad, pasion, cuidado">	<!--Indica al motor de busqueda las palabras 
+																					relevantes para el contenido-->
+	<script type="text/javascript">
+		var nombre = prompt("Ingrese su nombre:","");						//Declarar la variable nombre 
+		var respuesta = confirm("Nos encantaria mejorar el servicio que te ofrecemos "+nombre+"¿Podrias ayudarnos en responder esta pequeña encuesta?");
+		if (respuesta==1){
+			encuesta();			//Invoca a la funcion encuesta
+		}
+		else{ //Si la condicion no se cumple
+			alert("Agradecemos tu visita en nuestro sitio web, vuelve pronto")
+		}
+					//funcion
+		function encuesta(){					//esta funcion no devuelve ningun valor  
+			var p1 = prompt("¿Te agrado el embajador que te atendio?","");
+			var p2 = prompt("Sabiendo que 1 es muy malo y 5 muy bueno, ¿que te parecio tu experiencia con nosotros?","");
+			var p3 = prompt("¿Has adquirido productos con nosotros con anterioridad?","");
+			var p4 = prompt("¿Como podemos mejorar nuestro servicio?","");
+			var p5 = prompt("Del 1 al 10, ¿como calificaria la calidad de los productos?","");
+			
+		}
+		
+		function reloj() { //funcion que implementa un reloj 
+		    var today = new Date();					
+		    var hr = today.getHours();					//Obtiene la hora actual 
+		    var min = today.getMinutes();				//Obtiene los minutos actuales
+		    var sec = today.getSeconds();				//Obtiene segundos actuales 
+		    //Add a zero in front of numbers<10
+		    min = checkTime(min);						//Actualizacion del tiempo en minutos 
+		    sec = checkTime(sec);						//Actualizacion del tiempo en segundos
+		    document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec;	//Es es lo que se mostrara cuando se invoque a la funcion
+		    var time = setTimeout(function(){ startTime() }, 500);	//Se indica la velocidad con la que se deben de cambiar los segundos 
+		}
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;			
+		    }
+		    return i;				//se retonrna el valor de i a la funion
+		}
+		function continuar(){			//funcion para continuar a la siguiente pagina 
+			return confirm("La pagina puede no ser segura, ¿Deseas continuar?");	/*direcciona al usuario a la pagina siguiente si es que este lo desea asi*/
+		}
+	</script>
+</head>
+<body onload="reloj()">			<!--se invoca a la funcion reloj-->
+	<center>
+		<img src="../img/img1.png" width="350" height="100">		<!--imagen logotipo-->
+	</center>
+	<script type="text/javascript" src="../JavaScript/codigo1.js"></script>			<!--adjunta un archivo js desde otra carpeta-->
+	<br>            <!--salto de linea-->
+	<br>            <!--salto de linea-->
+	<br>			<!--salto de linea-->
+	<br>            <!--salto de linea-->
+	<br>            <!--salto de linea-->
+	<br>            <!--salto de linea-->
+	<center>
+		<img src="../img/img12.png" alt="imagen que agradece por la compra">
+		<br>
+	</center>
+	<div id="clockdate">		<!--se adjunta estilo al reloj con css-->
+  		<div class="clockdate-wrapper">		<!--se adjunta estilo al reloj con css-->	
+   			<div id="clock"></div>	<!--se adjunta estilo al reloj con css-->
+   			<div id="date"></div> 	<!--se adjunta estilo al reloj con css-->
+ 		 </div>
+	</div>
+	<center>
+		<a href="https://chicomalo.com.mx/" onclick="return continuar()">			<!--Direcciona a la pagina sig pero antes pregunta si desa ctonitnuar-->
+			Conoce más sobre nosotros solo da click AQUI
+		</a>
+	</center>
+</body>
+</html>
